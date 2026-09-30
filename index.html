@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SoluGasPro | Mantenimiento de Gas</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoluGasPro | Expertos en Mantenimiento de Gas Comercial</title>
+    <meta name="description" content="Servicio técnico especializado en mantenimiento preventivo, detección de fugas e instalación de redes de gas para el sector comercial y residencial.">
+    <!-- Cargamos Tailwind CSS directo desde el CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              royal: "#1d4ed8",
-              navy: "#0f172a",
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-  <body class="min-h-screen bg-slate-100 text-slate-800">
-    <header class="bg-navy text-white shadow-lg">
-      <div class="mx-auto max-w-5xl px-6 py-5">
-        <h1 class="text-2xl font-bold tracking-wide">SoluGasPro</h1>
-      </div>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+    <!-- Encabezado / Navegación -->
+    <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tight">
+                Solu<span class="text-blue-400">Gas</span>Pro
+            </div>
+            <a href="https://wa.me/573000000000" class="hidden md:block bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-6 rounded-full transition-colors">
+                Cotizar por WhatsApp
+            </a>
+        </div>
     </header>
 
-    <main>
-      <section class="bg-gradient-to-br from-royal to-navy text-white">
-        <div class="mx-auto max-w-5xl px-6 py-16 md:py-24">
-          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-blue-100">Mantenimiento profesional</p>
-          <h2 class="text-4xl font-extrabold leading-tight md:text-5xl">Expertos en Redes de Gas</h2>
-          <p class="mt-4 max-w-2xl text-lg text-blue-100">
-            Cuidamos la seguridad y el rendimiento de tus instalaciones con técnicos especializados y atención rápida.
-          </p>
+    <!-- Sección Hero (Principal) -->
+    <section class="bg-blue-800 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Seguridad y Eficiencia en <br><span class="text-blue-300">Redes de Gas Comercial</span>
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+                Mantenimiento, calibración y certificación de equipos a gas para restaurantes, locales y conjuntos residenciales con los más altos estándares técnicos.
+            </p>
+            <a href="https://wa.me/573233389506" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-transform transform hover:scale-105 inline-block">
+                Solicitar Revisión Técnica
+            </a>
         </div>
-      </section>
+    </section>
 
-      <section class="mx-auto max-w-5xl px-6 py-14">
-        <h3 class="mb-6 text-2xl font-bold text-navy">Nuestros servicios</h3>
-        <ul class="grid gap-4 md:grid-cols-3">
-          <li class="rounded-xl border border-blue-100 bg-white p-5 shadow-sm">
-            <p class="font-semibold text-royal">Mantenimiento de estufas</p>
-          </li>
-          <li class="rounded-xl border border-blue-100 bg-white p-5 shadow-sm">
-            <p class="font-semibold text-royal">Tuberías</p>
-          </li>
-          <li class="rounded-xl border border-blue-100 bg-white p-5 shadow-sm">
-            <p class="font-semibold text-royal">Detectores de fugas</p>
-          </li>
-        </ul>
-      </section>
-    </main>
+    <!-- Sección de Servicios -->
+    <section class="py-20 max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Nuestros Servicios Especializados</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold text-blue-800 mb-3">Mantenimiento Preventivo</h3>
+                <p class="text-slate-600">Revisión y limpieza técnica de estufas, parrillas y hornos comerciales para garantizar una combustión limpia y eficiente.</p>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold text-blue-800 mb-3">Detección de Fugas</h3>
+                <p class="text-slate-600">Diagnóstico de alta precisión en líneas de gas, válvulas y uniones utilizando detectores electrónicos de última tecnología.</p>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold text-blue-800 mb-3">Instalación y Calibración</h3>
+                <p class="text-slate-600">Montaje de redes, cambio de quemadores y ajuste de válvulas cumpliendo con la normativa de seguridad vigente.</p>
+            </div>
+        </div>
+    </section>
 
-    <a
-      href="https://wa.me/573000000000"
-      class="fixed bottom-6 right-6 rounded-full bg-royal px-6 py-3 text-sm font-bold text-white shadow-xl transition hover:bg-blue-700"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Solicitar revisión por WhatsApp"
-    >
-      Solicitar Revisión
-    </a>
-  </body>
+    <!-- Pie de página -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center">
+        <p>&copy; 2026 SoluGasPro. Especialistas en redes de gas.</p>
+    </footer>
+
+</body>
 </html>
