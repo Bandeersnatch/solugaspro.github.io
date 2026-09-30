@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoluGasPro | Mantenimiento de Gas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              royal: "#1d4ed8",
+              navy: "#0f172a",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-100 text-slate-800">
+    <header class="bg-navy text-white shadow-lg">
+      <div class="mx-auto max-w-5xl px-6 py-5">
+        <h1 class="text-2xl font-bold tracking-wide">SoluGasPro</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="bg-gradient-to-br from-royal to-navy text-white">
+        <div class="mx-auto max-w-5xl px-6 py-16 md:py-24">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-blue-100">Mantenimiento profesional</p>
+          <h2 class="text-4xl font-extrabold leading-tight md:text-5xl">Expertos en Redes de Gas</h2>
+          <p class="mt-4 max-w-2xl text-lg text-blue-100">
+            Cuidamos la seguridad y el rendimiento de tus instalaciones con técnicos especializados y atención rápida.
+          </p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-5xl px-6 py-14">
+        <h3 class="mb-6 text-2xl font-bold text-navy">Nuestros servicios</h3>
+        <ul class="grid gap-4 md:grid-cols-3">
+          <li class="rounded-xl border border-blue-100 bg-white p-5 shadow-sm">
+            <p class="font-semibold text-royal">Mantenimiento de estufas</p>
+          </li>
+          <li class="rounded-xl border border-blue-100 bg-white p-5 shadow-sm">
+            <p class="font-semibold text-royal">Tuberías</p>
+          </li>
+          <li class="rounded-xl border border-blue-100 bg-white p-5 shadow-sm">
+            <p class="font-semibold text-royal">Detectores de fugas</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <a
+      href="https://wa.me/573000000000"
+      class="fixed bottom-6 right-6 rounded-full bg-royal px-6 py-3 text-sm font-bold text-white shadow-xl transition hover:bg-blue-700"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Solicitar revisión por WhatsApp"
+    >
+      Solicitar Revisión
+    </a>
+  </body>
+</html>
