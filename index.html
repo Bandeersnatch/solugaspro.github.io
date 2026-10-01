@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solugaspro | Instalaciones y Mantenimiento de Gas</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config for Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0052cc',     // Primary
+                        accent: '#00a8e8',    // Secondary
+                        light: '#f8f9fa',     // Background
+                        whatsapp: '#25d366',  // WhatsApp green
+                        dark: '#1f2937'       // Text dark
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        /* Custom animation for WhatsApp pulse */
+        @keyframes pulse-whatsapp {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .whatsapp-float {
+            animation: pulse-whatsapp 2s infinite;
+        }
+    </style>
+</head>
+<body class="text-dark antialiased font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <span class="text-3xl font-extrabold text-brand tracking-tight">Solugas<span class="text-accent">pro</span></span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#servicios" class="text-gray-600 hover:text-brand font-semibold transition">Servicios</a>
+                    <a href="#experiencia" class="text-gray-600 hover:text-brand font-semibold transition">Experiencia</a>
+                    <a href="#galeria" class="text-gray-600 hover:text-brand font-semibold transition">Galería</a>
+                    <a href="https://wa.me/573000000000" target="_blank" class="bg-brand text-white px-6 py-2.5 rounded-full font-bold hover:bg-blue-800 transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        Contactar Ahora
+                    </a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#servicios" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand hover:bg-gray-50 rounded-md">Servicios</a>
+                <a href="#experiencia" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand hover:bg-gray-50 rounded-md">Experiencia</a>
+                <a href="#galeria" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand hover:bg-gray-50 rounded-md">Galería</a>
+                <a href="https://wa.me/573000000000" target="_blank" class="block mt-4 text-center bg-brand text-white px-5 py-3 rounded-md font-bold hover:bg-blue-800">
+                    <i class="fab fa-whatsapp mr-2"></i> Contactar Ahora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-brand via-blue-700 to-accent opacity-95"></div>
+        <!-- Decorative pattern/overlay -->
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 text-white text-sm font-semibold tracking-wider mb-6 border border-white/30 backdrop-blur-sm">
+                <i class="fas fa-fire-flame-curved mr-2"></i> Más de 20 años de experiencia
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-6 max-w-5xl">
+                Expertos en Instalaciones y Mantenimiento de Gas
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl font-light">
+                ¿Otros técnicos no pudieron resolverlo? <strong class="font-bold text-white">Si está difícil, nosotros lo solucionamos.</strong> Especialistas en gasodomésticos residenciales y redes para restaurantes.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full justify-center sm:w-auto">
+                <a href="https://wa.me/573000000000" target="_blank" class="bg-whatsapp hover:bg-green-500 text-white text-lg font-bold py-4 px-8 rounded-full shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 flex items-center justify-center">
+                    <i class="fab fa-whatsapp text-2xl mr-3"></i> Cotizar por WhatsApp
+                </a>
+                <a href="#servicios" class="bg-white/10 hover:bg-white/20 border-2 border-white/30 text-white text-lg font-bold py-4 px-8 rounded-full transition backdrop-blur-sm flex items-center justify-center">
+                    Ver Servicios
+                </a>
+            </div>
+        </div>
+        
+        <!-- Bottom curve separator -->
+        <div class="absolute bottom-0 w-full overflow-hidden leading-none transform translate-y-[1px]">
+            <svg class="relative block w-full h-[50px] lg:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" fill="#f8f9fa"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand text-sm font-bold uppercase tracking-widest mb-2">Lo que hacemos mejor</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-dark">Nuestros Servicios</h3>
+                <div class="w-24 h-1 bg-accent mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 p-8 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-brand group-hover:text-white transition-colors duration-300 shadow-sm">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-4">Mantenimiento y Reparación</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Arreglamos lo que otros dan por perdido. Servicio técnico especializado para estufas, freidoras industriales, hornos y toda clase de gasodomésticos.
+                    </p>
+                    <ul class="mt-6 space-y-2">
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-2 text-sm"></i> <span class="text-sm text-gray-700">Diagnóstico preciso</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-2 text-sm"></i> <span class="text-sm text-gray-700">Repuestos garantizados</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 p-8 border border-gray-100 group relative transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">
+                        MÁS SOLICITADO
+                    </div>
+                    <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-brand group-hover:text-white transition-colors duration-300 shadow-sm">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-4">Instalación Residencial</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Más de 4,000 calentadores instalados con éxito. Conexiones seguras y certificadas para hogares, apartamentos y conjuntos residenciales.
+                    </p>
+                    <ul class="mt-6 space-y-2">
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-2 text-sm"></i> <span class="text-sm text-gray-700">Instalación de calentadores</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-2 text-sm"></i> <span class="text-sm text-gray-700">Redes internas y estufas</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 p-8 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-brand group-hover:text-white transition-colors duration-300 shadow-sm">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-4">Instalaciones Comerciales</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Somos el aliado de los grandes restaurantes. Diseñamos, instalamos y mantenemos redes de gas complejas para cocinas industriales de alto volumen.
+                    </p>
+                    <ul class="mt-6 space-y-2">
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-2 text-sm"></i> <span class="text-sm text-gray-700">Cumplimiento de normativas</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-2 text-sm"></i> <span class="text-sm text-gray-700">Montaje de restaurantes desde cero</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Experience Section -->
+    <section id="experiencia" class="py-20 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Text Content -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-brand text-sm font-bold uppercase tracking-widest mb-2">Nuestra Experiencia</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-dark mb-6 leading-tight">
+                        El técnico al que llaman cuando nadie más tiene la solución.
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Con más de <strong class="text-brand font-bold">20 años de trayectoria</strong> en el sector, hemos visto de todo. No somos técnicos improvisados; somos la garantía de que el trabajo quedará bien hecho, a la primera.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Restaurantes de primer nivel, cadenas de comida reconocidas y miles de hogares nos confían sus instalaciones. ¿Por qué? Porque cobramos lo justo, trabajamos con honestidad y solucionamos los problemas más complejos que otros dejan a medias.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-8 border-t border-gray-100 pt-8">
+                        <div>
+                            <div class="text-4xl font-extrabold text-brand mb-2">+4,000</div>
+                            <div class="text-sm text-gray-500 uppercase font-semibold tracking-wider">Calentadores Instalados</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-extrabold text-accent mb-2">+20</div>
+                            <div class="text-sm text-gray-500 uppercase font-semibold tracking-wider">Años de Experiencia</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image / Visual Content -->
+                <div class="lg:w-1/2 relative">
+                    <!-- Decorative background block -->
+                    <div class="absolute -inset-4 bg-brand rounded-[2rem] transform rotate-3 opacity-10"></div>
+                    
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+                        <!-- Placeholder for a great photo of the uncle working -->
+                        <img src="https://placehold.co/800x600/0052cc/ffffff?text=Tu+Foto+Trabajando+Aquí" alt="Experto en Gas" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105">
+                        
+                        <!-- Overlay Tag -->
+                        <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-shield-check text-2xl text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-dark text-lg">Servicio Garantizado</h5>
+                                    <p class="text-sm text-gray-600">Trabajamos bajo estrictas normas de seguridad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 flex flex-col items-center">
+                <h2 class="text-brand text-sm font-bold uppercase tracking-widest mb-2">Nuestro Portafolio</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-dark mb-4">Evidencia de Calidad</h3>
+                <p class="text-gray-600 max-w-2xl text-lg">
+                    Tenemos miles de instalaciones en nuestro historial. Aquí puedes ver una pequeña muestra de nuestros trabajos en redes comerciales y residenciales.
+                </p>
+                <div class="w-24 h-1 bg-accent mt-6 rounded-full"></div>
+            </div>
+
+            <!-- CSS Grid for Gallery -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-square">
+                    <img src="https://placehold.co/600x600/1f2937/ffffff?text=Redes+Comerciales" alt="Redes de gas en restaurante" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand/90 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-white font-bold text-xl">Redes Comerciales</span>
+                        <span class="text-blue-100 text-sm">Instalación en restaurante</span>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-square">
+                    <img src="https://placehold.co/600x600/0052cc/ffffff?text=Quemadores+Industriales" alt="Mantenimiento quemadores" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand/90 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-white font-bold text-xl">Quemadores Industriales</span>
+                        <span class="text-blue-100 text-sm">Mantenimiento preventivo</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-square">
+                    <img src="https://placehold.co/600x600/00a8e8/ffffff?text=Instalación+Calentadores" alt="Instalación de calentador" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand/90 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-white font-bold text-xl">Calentadores de Paso</span>
+                        <span class="text-blue-100 text-sm">Residencial - Normativa</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-square">
+                    <img src="https://placehold.co/600x600/25d366/ffffff?text=Detección+de+Fugas" alt="Válvulas y tuberías" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand/90 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-white font-bold text-xl">Detección y Reparación</span>
+                        <span class="text-blue-100 text-sm">Solución de fugas de gas</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-square">
+                    <img src="https://placehold.co/600x600/f59e0b/ffffff?text=Tuberías+Complejas" alt="Tuberías industriales" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand/90 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-white font-bold text-xl">Diseño de Tuberías</span>
+                        <span class="text-blue-100 text-sm">Trazados de alta complejidad</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-square">
+                    <img src="https://placehold.co/600x600/e11d48/ffffff?text=Equipos+Comerciales" alt="Freidoras y Hornos" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand/90 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-white font-bold text-xl">Gasodomésticos</span>
+                        <span class="text-blue-100 text-sm">Hornos, Freidoras y Estufas</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.instagram.com/solugaspro" target="_blank" class="inline-flex items-center text-brand font-bold hover:text-blue-800 transition">
+                    Ver más trabajos en nuestro Instagram <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Before Footer -->
+    <section class="bg-brand py-16 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-white opacity-5"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-accent opacity-20"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">¿Necesitas un experto para hoy mismo?</h2>
+            <p class="text-blue-100 mb-8 text-lg">No arriesgues la seguridad de tu hogar o negocio con aprendices. Llama al experto, paga un precio justo y duerme tranquilo.</p>
+            <a href="https://wa.me/573000000000" target="_blank" class="inline-block bg-whatsapp hover:bg-green-500 text-white font-bold py-4 px-10 rounded-full shadow-lg transition transform hover:scale-105">
+                <i class="fab fa-whatsapp mr-2 text-xl"></i> Escríbenos al WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8 border-t-4 border-brand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div>
+                    <span class="text-3xl font-extrabold text-white tracking-tight block mb-4">Solugas<span class="text-accent">pro</span></span>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Soluciones profesionales en instalación, mantenimiento y reparación de redes de gas residenciales y comerciales. Si está difícil, nosotros lo hacemos fácil.
+                    </p>
+                    <a href="https://solugaspro.com" class="text-accent hover:text-white transition">www.solugaspro.com</a>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Enlaces Rápidos</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#servicios" class="hover:text-accent transition"><i class="fas fa-chevron-right text-xs mr-2 text-brand"></i> Nuestros Servicios</a></li>
+                        <li><a href="#experiencia" class="hover:text-accent transition"><i class="fas fa-chevron-right text-xs mr-2 text-brand"></i> Por qué elegirnos</a></li>
+                        <li><a href="#galeria" class="hover:text-accent transition"><i class="fas fa-chevron-right text-xs mr-2 text-brand"></i> Portafolio de Trabajos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Síguenos en Redes</h4>
+                    <p class="text-gray-400 mb-4">Únete a nuestra comunidad y mira nuestro trabajo diario bajo <strong>@solugaspro</strong></p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/solugaspro" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/solugaspro" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://tiktok.com/@solugaspro" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-black transition-colors">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://youtube.com/@solugaspro" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Solugaspro. Todos los derechos reservados.
+                </p>
+                <p class="text-gray-500 text-sm mt-2 md:mt-0">
+                    Diseñado para conectar con los mejores.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/573000000000" target="_blank" 
+       class="whatsapp-float fixed bottom-6 right-6 w-16 h-16 bg-whatsapp text-white rounded-full flex items-center justify-center text-3xl shadow-xl hover:bg-green-600 transition-colors z-50 focus:outline-none"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Basic Script for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const links = menu.querySelectorAll('a');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Close menu when a link is clicked
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
