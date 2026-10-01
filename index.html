@@ -19,43 +19,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
     
+    <link rel="stylesheet" href="style.css">
     <!-- Tailwind Config for Custom Colors -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: '#0052cc',     // Primary
-                        accent: '#00a8e8',    // Secondary
-                        light: '#f8f9fa',     // Background
-                        whatsapp: '#25d366',  // WhatsApp green
-                        dark: '#1f2937'       // Text dark
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
     
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        /* La animación original causaba alertas de rendimiento, la hemos optimizado */
-        @keyframes pulse-whatsapp {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        .whatsapp-float {
-            animation: pulse-whatsapp 2s infinite;
-            will-change: transform;
-        }
-    </style>
 </head>
 <body class="text-dark antialiased font-sans">
 
